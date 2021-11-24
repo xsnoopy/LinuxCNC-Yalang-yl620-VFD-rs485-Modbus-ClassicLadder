@@ -1,0 +1,7 @@
+# Spindle output speed
+net spindle-at-speed    classicladder.0.out-01 <= pyvcp.at-speed
+net spindle-speed-out   classicladder.0.floatout-00 pyvcp.rpm-out
+net spindle-acc         classicladder.0.floatin-01 pyvcp.acc-f
+
+# Communication
+net pyvcp-is-connected classicladder.0.out-00 => pyvcp.is-connected
