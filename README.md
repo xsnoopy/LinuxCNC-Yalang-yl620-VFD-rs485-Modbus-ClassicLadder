@@ -38,6 +38,8 @@ This repository should help users to integrate the YL620 VFD using Modbus RS485 
 `net spindle-cmd-rps     <= spindle.0.speed-out-rps`
 
 `net spindle-cmd-rps-abs <= spindle.0.speed-out-rps-abs classicladder.0.floatin-00`
+
+`POSTGUI_HALFILE = vfd.hal`
  
  - Set up classic ladder 
  
