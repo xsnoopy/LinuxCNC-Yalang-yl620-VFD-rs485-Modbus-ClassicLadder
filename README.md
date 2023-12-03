@@ -15,7 +15,7 @@ This repository should help users to integrate the YL620 VFD using Modbus RS485 
   - P07.08 =  5  Frequency source selection RS 485
 - Connect the VFD with your USB Rs485 adapter.
 - Download vdf.hal vfd.clp and vfd.xml to your linuxcnc/config/NAME folder. Replace NAME with the name of your machine. 
-- Add this to your machine ini file at the end
+- Add this to your machine hal file at the end
 
 `loadrt classicladder_rt numS32out=100`
 
@@ -39,7 +39,9 @@ This repository should help users to integrate the YL620 VFD using Modbus RS485 
 
 `net spindle-cmd-rps-abs <= spindle.0.speed-out-rps-abs classicladder.0.floatin-00`
 
-`POSTGUI_HALFILE = vfd.hal`
+- Add this to your machine postgui_call_list.hal file at the end
+
+`source vfd.hal`
  
  - Set up classic ladder 
  
